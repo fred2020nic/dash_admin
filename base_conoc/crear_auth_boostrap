@@ -1,0 +1,41 @@
+Abra su Windows PowerShell o cmd, haga estos pasos:
+
+Paso 1: cree su aplicación laravel ingresando su cmd o powershell,
+
+composer create-project laravel/laravel [yourapp name]
+
+después de crear la aplicación, ingrese php artisan servepara ejecutar esta aplicación en el navegador.
+
+Después de ejecutarse por completo....... Ahora, así es como resuelvo mi problema, primero cierre la pestaña actual de powershell o cmd (no importa si la aplicación se ha estado ejecutando) y vuelva a abrir powershell o cmd. Esta vez haga lo siguiente: (Durante estos pasos, no intente ejecutar su aplicación o servicio PHP artesanal)
+
+Paso 2: Instale laravel ui ingresando:
+
+composer require laravel/ui
+
+Paso 3: Genere Bootstrap ui ingresando:
+
+php artisan ui bootstrap
+
+Paso 4: instale npm ingresando:
+
+npm install
+
+Paso 5: si la instalación de npm finalizó, ingrese:
+
+npm run dev
+
+Paso 6: ahora instale Auth Scaffolding ingresando:
+
+php artisan ui bootstrap --auth
+
+Paso 7: vuelva a instalar npm ingresando:
+
+npm install
+
+Paso 8: nuevamente, ingrese:
+
+npm run dev
+
+Paso 9: php artisan migrate
+
+Después de terminar el Paso 8, pruebe y ejecute su aplicación: php artisan serve
