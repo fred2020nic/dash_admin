@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in! hola cambio de git para ver si se actualiza en hostinger - lo camvbiamos a privado  3333') }}
+                    {{ __('You are logged in! hola cambio de git para ver si se actualiza en hostinger - lo camvbiamos a privado  1920222222 - 3333') }}
                 </div>
             </div>
         </div>
