@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in! hola') }}
+                    {{ __('You are logged in! hola cambio de git para ver si se actualiza en hostinger') }}
                 </div>
             </div>
         </div>
