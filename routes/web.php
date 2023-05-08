@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CalendarController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +23,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar')->middleware('auth');
+
+
